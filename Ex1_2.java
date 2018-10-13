@@ -4,16 +4,20 @@ import java.util.Scanner;
 public class Ex1_2 {
 
 	public static int getGreater(int a, int b) {
-		/*
-			This is the same as 
-			if (a >= b) {
-				return a;
-			}
-			else
-				return b;
-		*/
+		int greater;
 
-		return (a >= b)? a : b;
+		//basic
+		if (a >= b) {
+			greater = a;
+		}
+		else
+			greater = b;
+
+		// better
+		// greater = Math.max(a, b);
+		// greater = (a >= b)? a : b;
+
+		return greater;
 	}
 
 	public static int readNumber() {
